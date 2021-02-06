@@ -21,7 +21,7 @@ MongoClient.connect(
     }
     const db = client.db(databaseName);
     async function refresh() {
-      acuity.request("/appointments?max=4800", async function (err, res, appointments) {
+      acuity.request("/appointments?max=100", async function (err, res, appointments) {
         // console.log(res) 
 
         appointments.map(async (appointment, i) => {

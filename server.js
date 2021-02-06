@@ -38,7 +38,7 @@ MongoClient.connect(
     }
     refresh();
 
-    setInterval(refresh, 10000);
+    setInterval(refresh, 1000000);
   }
 );
 
